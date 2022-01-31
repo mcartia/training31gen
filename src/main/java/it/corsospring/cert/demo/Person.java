@@ -3,9 +3,10 @@ package it.corsospring.cert.demo;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 @Entity
-public class Person {
+public class Person implements Serializable {
 
     @Id @GeneratedValue
     Integer id;

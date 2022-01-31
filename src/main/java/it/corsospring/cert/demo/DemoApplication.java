@@ -20,7 +20,7 @@ public class DemoApplication  implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		personRepository.saveAll(personGenerator.buildPersons(10));
+		/*personRepository.saveAll(personGenerator.buildPersons(10)); */
 
 		for (Person p : personRepository.findAll()) {
 			System.out.println("> "+p);
